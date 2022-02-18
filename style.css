@@ -1,0 +1,277 @@
+::-webkit-scrollbar{
+    width:10px;
+    padding-right: 10px;
+}
+::-webkit-scrollbar-thumb{
+    background: black;
+    border-radius: 30px;
+}
+body{
+    font-family: poppins;
+}
+.banner{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+}
+.banner h1{
+    font-family: valencia;
+    text-align: center;
+    font-weight:400;
+    font-size: 150px;
+    position: relative;
+    animation: leftslide 1s;
+    color:#000
+}
+@media (max-width:540px){
+    .banner h1{
+        font-size: 70px;
+    }
+}
+@keyframes leftslide{
+    from{
+        margin-left:-10000px
+    }
+    to{
+        margin-left: 0px;
+    }
+}
+.banner p{
+    font-size: 35px;
+    animation: rightslide 0.5s;
+    font-family: futura;
+    font-weight: 300;
+}
+@keyframes rightslide{
+    from{
+        margin-right:-10000px
+    }
+    to{
+        margin-right: 0px;
+    }
+}
+@font-face{
+    font-family: valencia; 
+    src: url(valencia/Valencia\ 400.ttf);
+    font-style: normal;
+    font-weight:400
+}
+@font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-Regular.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-SemiBold.ttf);
+    font-style: normal;
+    font-weight: 700;
+  }
+  @font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-Medium.ttf);
+    font-style: normal;
+    font-weight: 500;
+  }
+  @font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-ExtraBold.ttf);
+    font-style: normal;
+    font-weight: 900;
+  }
+  @font-face {
+    font-family: "poppins";
+    src: url(poppins/Poppins-Regular.ttf);
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "futura";
+    src: url(futura/Futura\ Heavy\ font.ttf);
+    font-style: normal;
+    font-weight: 100;
+  }
+  @font-face {
+    font-family: "futura";
+    src: url(futura/Futura\ XBlk\ BT.ttf);
+    font-style: normal;
+    font-weight: 200;
+  }
+  @font-face {
+    font-family: "futura";
+    src: url(futura/futura\ light\ bt.ttf);
+    font-style: normal;
+    font-weight: 300;
+  }
+  @font-face {
+    font-family: "futura";
+    src: url(futura/futura\ medium\ bt.ttf);
+    font-style: normal;
+    font-weight: 400;
+  }
+  /*about me start from here*/
+  .about-me{
+      display: flex;
+      align-items: center;
+      position: relative;
+      overflow: hidden;
+  }
+  .about-me #stars{
+      font-family: futura;
+      font-weight:100;
+      font-size:150px;
+      margin-left:0px
+  }
+  .about-me .sub-title{
+    font-family: futura;
+    font-weight:300;
+    font-size: 25px;
+  }
+  .left-animation{
+    animation: leftslide .5s;
+  }
+  .about-me .left-part h1{
+    font-family: poppins;
+}
+.about-me .left-part p{
+    font-family: poppins;
+    font-weight:100;
+    margin-top:30px;
+    line-height: 25px;
+}
+.right-part img{
+    border-radius: 50%;
+    height: 400px;
+}
+   /*about me end here*/
+/*portfolio start from here*/
+#fullpage{
+overflow: hidden;
+height: 100vh;
+}
+
+.portfolio{
+    min-height: 100vh;
+    padding:50px 0px;
+    display: flex;
+    align-items: center; 
+    position: relative; 
+}
+.portfolio .number {
+    position: absolute;
+    top:50px;
+}
+.portfolio .content-part h1{
+    font-size: 70px;
+    font-weight: 100;
+    font-family: futura;
+}
+.portfolio .content-part h3{
+    font-size: 28px;
+    font-weight: 400;
+    font-family: futura;
+    margin:15px 0px;
+}
+.portfolio .content-part h4{
+    font-size: 25px;
+    font-weight: 300;
+    font-family: futura;
+}
+.portfolio .img-part .first-img{
+    margin-top:-30px
+}
+.portfolio .img-part .second-img{
+    margin-top:30px
+}
+.portfolio .img-part .eleven-img{
+    margin-bottom:30px
+}
+.portfolio .category{
+    position: absolute;
+    bottom:50px;
+}
+.portfolio .category h3{
+    
+    font-family: futura;
+    font-size: 25px;
+    font-weight: 400;
+}
+/*portfolio end here*/
+ .placeholder{
+    background:#000;
+    color:#000;
+    animation:loto  .5s;
+    background-size: 200% 100%;
+    opacity: 1;
+}
+.skill{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    position:relative;
+}
+.skill h3{
+    font-family: futura;
+    font-weight: 400;
+    font-size: 35px;
+    color:#5c5c5c;
+    z-index: 2;
+}
+.skill-lebel h1 {
+    font-family: futura;
+    font-weight: 100;
+    font-size: 150px;
+}
+@media (max-width:540px){
+    .wrapper{
+        height: auto !important;
+        transform: translateY(0%) !important;
+    }#fullpage{
+        height: auto !important;
+    }.portfolio{
+        height: auto;
+    }.portfolio .number{
+        position: static;
+        margin-top:30px;
+        margin-bottom:50px
+    }.portfolio .number h5{
+        font-size: 30px;
+    }
+    .portfolio .img-part .first-img{
+         margin-top:0px;
+    }.portfolio .category{
+        position: static;
+        margin-top:50px;
+    }.portfolio .content-part h4{
+        margin-bottom:50px;
+    }.contact-lebel{
+        font-size: 50px !important;
+        text-align: center;
+        margin-bottom:50px;
+    }.contact-info a{
+        display: inline-block;
+        margin:30px 10px !important;
+    }.skill-lebel h1 {
+        font-size: 50px;
+        text-align: center;
+        margin:50px 0px;
+    }.about-me .sub-title{
+        text-align: center;
+    }
+}
+.contact-info a{
+    display: inline-block;
+    margin:30px 30px;
+}
+.contact-info img{
+    width:90px;
+    height:90px;
+}
+.contact-lebel{
+    font-size: 150px;
+    font-weight: 100;
+    font-family: futura;
+}

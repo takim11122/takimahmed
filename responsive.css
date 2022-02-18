@@ -1,0 +1,31 @@
+/* hero responsive============================================== */
+@media (max-width:767px){
+    .banner h1{
+        font-size: 80px;
+    }
+}
+
+
+/* about me responsive========================================== */
+@media (max-width:767px){
+    .about-me #stars{
+        font-size: 30px ;
+    }
+}
+@media (min-width:600px){
+    .about-me{
+        height: 100vh;
+    }
+}
+@media (max-width:992px){
+    .about-me{
+        padding:10px 0px
+    }
+}
+/* portfolio responsive */
+
+@media (max-width:767px){
+    .portfolio .content-part h1 {
+        font-size: 50px ;
+    }
+}
